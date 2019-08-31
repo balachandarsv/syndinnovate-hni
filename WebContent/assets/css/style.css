@@ -1,0 +1,407 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+	b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+	details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+	output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup,
+	menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	width: 100%;
+	min-height: 1200px; height : 100%;
+	font-family: 'Lato', sans-serif;
+	background: url(../images/yellowbg.jpg) repeat;
+	font-family: 'Lato', sans-serif;
+	height: 100%;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.header_top {
+	background: #eb6a0f;
+	padding: 5px 20px;
+	height: 35px;
+	border-bottom: 5px solid #f5c018;
+	border-top: 5px solid #f5c018;
+}
+
+.header_menu {
+	width: 100%;
+}
+
+.header_menu li {
+	list-style: none;
+	font-size: 20px;
+	line-height: 35px;
+	display: inline;
+	color: #ffffff;
+	padding: 0 20px;
+}
+
+.header_menu li a {
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.middle_header {
+	width: 90%;
+	margin: 0 auto;
+	height: 130px;
+}
+
+.logo img {
+	margin: 20px auto;
+	box-shadow: 0 0 12px 4px rgba(255, 255, 255, 0.9);
+}
+
+.title h4 {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 30px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.title_menu {
+	background: #eb6a0f;
+	height: 45px;
+	border-bottom: 5px solid #f5c018;
+	border-top: 5px solid #f5c018;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.align-left {
+	text-align: left !important;
+}
+
+.align-right {
+	text-align: right !important;
+}
+
+.fs16 a {
+	font-size: 16px !important;
+}
+
+.float-left {
+	float: left !important;
+}
+
+.float-right {
+	float: right !important;
+}
+
+header {
+	border-bottom: 5px solid #f5c018;
+}
+
+.header-bottom {
+	background: #eb6a0f;
+	min-height: 5px;
+}
+
+.clear {
+	clear: both;
+}
+
+.main-container {
+	width: 90%;
+	margin: 20px auto;
+	background: #f5f5f5;
+	font-size: 18px;
+	line-height: 30px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+}
+
+.article-title {
+	text-align: center;
+}
+
+.article-title, .main-container h4 {
+	font-size: 18px;
+	line-height: 40px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	border-top: 5px solid #f5c018;
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 10px;
+	width: 100%;
+	background: #f5711e;
+}
+
+.form {
+	position: relative;
+	z-index: 1;
+	background: #eb6a0f;
+	max-width: 360px;
+	margin: 50px auto;
+	padding: 45px;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0
+		rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+	font-family: "Roboto", sans-serif;
+	outline: 0;
+	background: #f2f2f2;
+	width: 100%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+.form button {
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background: #f5c018;
+	width: 100%;
+	border: 0;
+	padding: 15px;
+	color: #FFFFFF;
+	font-size: 14px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+}
+
+.form button:hover, .form button:active, .form button:focus {
+	background: #43A047;
+}
+
+.form .message {
+	margin: 15px 0 0;
+	color: #b3b3b3;
+	font-size: 12px;
+}
+
+.form .message a {
+	color: #4CAF50;
+	text-decoration: none;
+}
+
+.form .register-form {
+	display: none;
+}
+
+.container {
+	position: relative;
+	z-index: 1;
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+.container:before, .container:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.container .info {
+	margin: 50px auto;
+	text-align: center;
+}
+
+.container .info h1 {
+	margin: 0 0 15px;
+	padding: 0;
+	font-size: 36px;
+	font-weight: 300;
+	color: #1a1a1a;
+}
+
+.container .info span {
+	color: #4d4d4d;
+	font-size: 12px;
+}
+
+.container .info span a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.container .info span .fa {
+	color: #EF3B3A;
+}
+
+.form h4 {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 10px auto;
+	color: #ffffff;
+}
+
+.error {
+	color: #ffffff;
+	line-height: 20px;
+	margin: 20px auto;
+}
+
+.sidebar {
+	border-radius: 0 0 30px 0;
+	width: 300px;
+	heigth: 30%;
+	min-height: 300px;
+	padding: 20px;
+	color: #ffffff;
+	background: #f5711e;
+	width: 300px;
+	margin: 20px 0;
+	font-size: 20px;
+}
+
+.accounts {
+	
+}
+
+.table {
+	margin: 20px;
+	width: 100%;
+	background-color: #fff;
+	color: #363636;
+}
+
+.sidebar ul li {
+	display: inline-block;
+	background: #f5711e;
+	width: 100%;
+	box-sizing: border-box;
+	position: relative;
+	padding: 0 20px 0 15px;
+}
+
+.sidebar ul li a {
+	font-size: 20px;
+	padding: 20px 0 20px 35px;
+	color: #fff;
+	text-decoration: none;
+	border: 0;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	position: relative;
+	transition: all 0.5s ease;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.sidebar  ul li:hover {
+	background: #fff;
+}
+
+.sidebar  ul li:hover a {
+	color: #f5711e;
+}
+
+.photo {
+	width: 300px;
+	margin: 0 auto;
+}
+
+#myform {
+	width: 40%;
+	margin: 30px auto;
+}
+
+.blink {
+	font-weight: bolder;
+}
+
+.datetimepicker-dummy .datetimepicker-dummy-wrapper {
+	background: #ffffff;
+}
+.tilex{
+	background: #f5711e;
+	margin:20px;
+	padding:100px 30px;
+}
+
+.tile h4{
+	font-size:20px;
+	width:100%;
+	text-transform:uppercase;
+	text-align: center;
+	font-weight:bold;
+}
+.tile h5{
+	font-size:20px;
+	text-align: center;
+	font-weight:bold;
+	color:#ffffff;
+}
+
+
+.image.is-128x128{
+	overflow:hidden;
+}
+
+.notification > button.delete {
+  border: none;
+}
+
+.notify{
+	position:fixed;
+	top:0;
+	right:0;
+}
+.notification h4{
+	font-size:20px;
+}
+.notification h5{
+	font-size:18px;
+}
+
+.accounts h4{
+	font-size:20px;
+	font-weight:bold;
+}
