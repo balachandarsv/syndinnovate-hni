@@ -7,9 +7,14 @@ Developing automated system for Identification &amp; Triggering alert when a Hig
 # Download the following libraries and place it in WEB-INF/lib
 
 derby-10.14.2.0.jar
+
 json-20170516.jar
+
 sendgrid-java-latest.jar
+
 twilio-7.41.2-jar-with-dependencies.jar
+
+latest opencv built with Inference Engine support
 
 You need to signup in sendgrid and twilio for mail and WhatsApp integrations and update the Constants.java 
 
