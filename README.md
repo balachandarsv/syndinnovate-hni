@@ -7,9 +7,14 @@ Developing automated system for Identification &amp; Triggering alert when a Hig
 # Download the following libraries and place it in WEB-INF/lib
 
 derby-10.14.2.0.jar
+
 json-20170516.jar
+
 sendgrid-java-latest.jar
+
 twilio-7.41.2-jar-with-dependencies.jar
+
+latest opencv built with Inference Engine support
 
 You need to signup in sendgrid and twilio for mail and WhatsApp integrations and update the Constants.java 
 
@@ -21,23 +26,23 @@ The aim is to develop a system to identify HNI and top 100 customers when they e
 
 # Tech used
 
-	OpenCV, Derby, AI, Face Recognition, WebSockets, WhatsApp Twilio, SendGrid Mail
+OpenCV, Derby, AI, Face Recognition, WebSockets, WhatsApp Twilio, SendGrid Mail
 
 
 # Model usage
 
-	The models used here are available on the Internet. We have converted the model to work with our OpenCV pipeline.
+The models used here are available on the Internet. We have converted the model to work with our OpenCV pipeline.
 
 
 # Demo 
 
-	You can find the demo [here](https://www.youtube.com/watch?v=HFVtKIxehH0)
+You can find the demo [here](https://www.youtube.com/watch?v=HFVtKIxehH0)
 
 # Authors
 	
-	[Balachandar S](https://github.com/balachandarsv)
+[Balachandar S](https://github.com/balachandarsv)
 
-	[Sujatha S Iyer](https://github.com/SujathaSIyer)
+[Sujatha S Iyer](https://github.com/SujathaSIyer)
 
 
 
