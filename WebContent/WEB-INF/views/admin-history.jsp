@@ -15,6 +15,10 @@
 			<li><a
 				href="${pageContext.request.contextPath}/admin/addblacklist">Add
 					Blacklist</a></li>
+					
+			<li><a
+				href="${pageContext.request.contextPath}/admin/addUser">Add
+					User</a></li>
 		</ul>
 	</aside>
 

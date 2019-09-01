@@ -30,6 +30,17 @@ public class Users {
 		}
 		return null;
 	}
+
+	public static boolean insert(String[] values) {
+		try {
+			return DBUtils.insert(TABLENAME, USERNAME + "," + PASSWORD + ","
+					+ EMAIL + "," + MOBILE + "," + ROLE, values);
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+		return true;
+	}
+
 	public static JSONArray getUsers(String wherecol, String whereVal) {
 		try {
 			JSONObject result = DBUtils.select(TABLENAME,
